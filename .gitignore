@@ -1,0 +1,14 @@
+# SSDT / SQL Server Data Tools build output
+*.pdb
+*.pdm
+bin/
+obj/
+
+# Personal debug scripts (not for deployment)
+*_debug.sql
+*_test.sql
+
+# Compiled or generated artifacts
+*.dacpac
+*.bacpac
+
