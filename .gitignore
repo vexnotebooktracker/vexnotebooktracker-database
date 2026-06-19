@@ -1,3 +1,5 @@
+*.bat
+
 # SSDT / SQL Server Data Tools build output
 *.pdb
 *.pdm
