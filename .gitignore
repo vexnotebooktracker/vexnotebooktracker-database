@@ -1,16 +1,43 @@
-*.bat
+## Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.dll
 
-# SSDT / SQL Server Data Tools build output
-*.pdb
+## SSDT / SQL Server Data Tools build output
+*.dacpac
+*.bacpac
 *.pdm
-bin/
-obj/
 
-# Personal debug scripts (not for deployment)
+## NuGet (restored from packages.config)
+packages/
+*.nupkg
+
+## Visual Studio user-specific / cache
+.vs/
+*.user
+*.suo
+*.userprefs
+*.cache
+
+## Rider / VS Code (optional)
+.idea/
+.vscode/
+
+## Publish / logs / scratch
+*.log
+*.bak
+[Pp]ublish/
+*.[Pp]ublish.xml
+
+## Personal debug scripts (not for deployment)
 *_debug.sql
 *_test.sql
 
-# Compiled or generated artifacts
-*.dacpac
-*.bacpac
-
+## ─── SECRETS — never commit ───
+# Actual AES key (copy KeyMaterial.cs.example -> KeyMaterial.cs, paste generated key)
+KeyMaterial.cs
+# Compiled encryptor carries the key baked in — never commit the binary
+ConnectionStringEncryptor.exe
+*.exe

@@ -1,0 +1,15 @@
+// KeyMaterial.cs.example  —  COMMITTED TEMPLATE (no real key).
+// Copy this file to KeyMaterial.cs and paste a generated 32-byte key.
+// KeyMaterial.cs is git-ignored; this .example is the placeholder others copy.
+// Generate a key with Generate-Key.ps1.
+namespace NotebookTracker {
+    public partial class CryptDecrypt {
+        // 32-byte (256-bit) key for AES-256. REPLACE with your generated key.
+        internal static readonly byte[] Key = new byte[32] {
+            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+        };
+    }
+}
